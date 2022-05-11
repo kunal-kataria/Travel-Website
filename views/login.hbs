@@ -53,35 +53,35 @@
         </div>
 
         <div id="reg-formss">
-            <form action="index.html" class="reg-form" id="reg-form">
+            <form action="/" method="/post" onsubmit="CallRegister()" class="reg-form" id="reg-form">
                 <h1>Register</h1>
         
                 <div class="txtb">
-                    <input type="text">
+                    <input type="text" id="name">
                     <span data-placeholder="Name"></span>
                   </div>
 
                 <div class="txtb">
-                  <input type="text">
+                  <input type="text" id="username">
                   <span data-placeholder="Username"></span>
                 </div>
         
                 <div class="txtb">
-                  <input type="password">
+                  <input type="password" id="password">
                   <span data-placeholder="Password"></span>
                 </div>
         
                 <div class="txtb">
-                    <input type="date">
+                    <input type="date" >
                     <span data-placeholder="Date"></span>
                 </div>
 
                 <div class="txtb">
-                    <input type="text">
+                    <input type="text" id="mobileNo">
                     <span data-placeholder="Mobile No."></span>
                 </div>
 
-                <input type="submit" class="logbtn" value="Register">
+                <button type="submit" class="logbtn" value="Register">
         
                 <div class="bottom-text">
                   Already have an account? <a id="reg-toggle" href="#">Login.</a>
@@ -136,5 +136,16 @@
     </section>
     
     </body>
+    <script>
+        const CallRegister = () => {
+            fetch("/register", {
+                method: 'POST'
+            }).then(()=>{
+                console.log("API CALLED")
+            }).catch((error)=>{
+                console.log(error)
+            })
+        }
+    </script>
     
     </html>

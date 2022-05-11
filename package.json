@@ -1,0 +1,28 @@
+{
+  "name": "web-p-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kunal-kataria/Travel-Website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kunal-kataria/Travel-Website/issues"
+  },
+  "homepage": "https://github.com/kunal-kataria/Travel-Website#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.5",
+    "hbs": "^4.2.0",
+    "mongoose": "^6.3.3",
+    "nodemon": "^2.0.16"
+  }
+}
