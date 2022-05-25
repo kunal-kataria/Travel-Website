@@ -212,11 +212,13 @@ section {
 .dest-row{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 2rem;
 }
 
-.destination .box-container .box {
+.destination .box-container .dest-row .box {
   border-radius: 1rem;
+  width: 23%;
   overflow: hidden;
   background: #10192a;
 }
@@ -277,14 +279,17 @@ section {
     display: flex;
     justify-content: space-evenly;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .services .box-container .box {
-  background: #10192a;
-  border-radius: 1rem;
-  padding: 3rem;
-  text-align: center;
-  border: 0.2rem solid #111;
+    width: auto;
+    background: #10192a;
+    border-radius: 1rem;
+    padding: 3rem;
+    text-align: center;
+    border: 0.2rem solid #111;
+    width: 31%;
 }
 
 .services .box-container .box:hover {
@@ -541,6 +546,9 @@ section {
   section {
     padding: 3rem 2rem;
   }
+  .services .box-container .box {
+      width: 47%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -572,6 +580,9 @@ section {
   .home .content h3 {
     font-size: 9vw;
   }
+  .destination .box-container .dest-row .box {
+      width: 48%;
+  }
 }
 
 @media (max-width: 450px) {
@@ -584,6 +595,27 @@ section {
   .banner .content h3 {
     font-size: 2.7rem;
   }
+  .box-container {
+      flex-direction: column;
+      padding: 1rem;
+  }
+  .dest-row {
+      flex-direction: column;
+  }
+  .serv-row {
+      flex-wrap: wrap;
+  }
+  .destination .box-container .dest-row .box {
+    width: 99%;
+}
+.logo {
+    font-size: 2rem;
+}
+
+.header .btn {
+    font-size: 1rem;
+}
+
 }
 
 .zoominleft { 

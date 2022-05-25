@@ -7,6 +7,7 @@
     <title>Destination</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/tours.css">
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -14,7 +15,7 @@
 
         <div id="menu-btn" class="fas fa-bars"></div>
     
-        <a href="index.html" class="logo zoominleft"> <i class="fas fa-paper-plane"></i>Travellrr. </a>
+        <a href="/" class="logo zoominleft"> <i class="fas fa-paper-plane"></i>Travellrr. </a>
     
         <nav class="navbar">
             <a class="zoominleft" href="/">Home</a>
@@ -22,8 +23,8 @@
             <a class="zoominleft" href="/destination">destination</a>
             <a class="zoominleft" href="/#gallery">gallery</a>
         </nav>
-    
-        <a href="/login" class="btn zoominleft">Plan your journey</a>
+        
+            <a href="/login" class="btn zoominleft">Plan your journey</a>
     
     </header>
 
@@ -38,7 +39,7 @@
             <div class="box zoominleft">
                 <img src="images/home-bg.jpg" alt="">
                 <div class="content">
-                    <h3> <i class="fas fa-map-marker-alt"></i> <span class="conutry_name"> </span> </h3>
+                    <h3> <i class="fas fa-map-marker-alt"></i> Norway </h3>
                     <p>Must visit Destination</p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
@@ -53,9 +54,9 @@
             </div>
     
             <div class="box fade-in">
-                <img src="images/timur-kozmenko-8cxepiYQsFI-unsplash.jpg" alt="">
+                <img src="images/img-about.jpg" alt="">
                 <div class="content">
-                    <h3> <i class="fas fa-map-marker-alt"></i> <span class="conutry_name"> </span> </h3>
+                    <h3> <i class="fas fa-map-marker-alt"></i>Spain </h3>
                     <p>Natures Destination</p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
@@ -72,7 +73,7 @@
             <div class="box zoominright">
                 <img src="images/place5.jpg" alt="">
                 <div class="content">
-                    <h3> <i class="fas fa-map-marker-alt"></i> <span class="conutry_name"> </span> </h3>
+                    <h3> <i class="fas fa-map-marker-alt"></i>Italy </h3>
                     <p>Most visites!</p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
@@ -89,7 +90,7 @@
             <div class="box zoominleft">
                 <img src="images/discover1.jpg" alt="">
                 <div class="content">
-                    <h3> <i class="fas fa-map-marker-alt"></i> <span class="conutry_name"> </span> </h3>
+                    <h3> <i class="fas fa-map-marker-alt"></i> Hawai</h3>
                     <p>Tremendous !!!!!!</p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
@@ -106,7 +107,7 @@
             <div class="box fade-in">
                 <img src="images/discover3.jpg" alt="">
                 <div class="content">
-                    <h3> <i class="fas fa-map-marker-alt"></i> <span class="conutry_name"> </span> </h3>
+                    <h3> <i class="fas fa-map-marker-alt"></i> Andaman </h3>
                     <p>Rocking Scenaries blended!</p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
@@ -123,7 +124,7 @@
             <div class="box zoominright">
                 <img src="images/pexels-pierre-blaché-2901215.jpg" alt="">
                 <div class="content">
-                    <h3> <i class="fas fa-map-marker-alt"></i><span class="conutry_name"> </span> </h3>
+                    <h3> <i class="fas fa-map-marker-alt"></i>Paris </h3>
                     <p>Where Nature meets Human</p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
@@ -140,7 +141,7 @@
             <div class="box zoominleft">
                 <img src="images/fuji.jpg" alt="">
                 <div class="content">
-                    <h3> <i class="fas fa-map-marker-alt"></i><span class="conutry_name"> </span>  </h3>
+                    <h3> <i class="fas fa-map-marker-alt"></i>Tokyo</h3>
                     <p>Where Nature meets Human</p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
@@ -157,7 +158,7 @@
             <div class="box fade-in">
                 <img src="images/egypt.jpg" alt="">
                 <div class="content">
-                    <h3> <i class="fas fa-map-marker-alt"></i><span class="conutry_name"> </span>  </h3>
+                    <h3> <i class="fas fa-map-marker-alt"></i>Egypt</h3>
                     <p>Where Nature meets Human</p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
@@ -174,7 +175,7 @@
             <div class="box zoominright">
                 <img src="images/singapore.jpg" alt="">
                 <div class="content">
-                    <h3> <i class="fas fa-map-marker-alt"></i>  <span class="conutry_name"> </span> </h3>
+                    <h3> <i class="fas fa-map-marker-alt"></i>Singapore</h3>
                     <p>Where Nature meets Human</p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
@@ -191,6 +192,8 @@
         </div>
     
     </section>
+
+
 
     <!-- footer section starts  -->
 
@@ -236,22 +239,5 @@
 
 
 </section>
-
-<script>
-
-    const countries ='{names:["Norway","Spain","Italy","Hawai","Andaman","Paris","Tokyo","Egypt","Singapore"]}'
-     
-    const obj = JSON.parse(countries);
-
-    let country_names = document.getElementsByClassName("conutry_name");
-   
-    let i;
-    for(i=0;i<country_names.length;i++)
-    {
-        country_names[i].innerHTML = obj.names[i];
-    }
-
-</script>
-
 </body>
 </html>
